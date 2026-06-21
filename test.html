@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body style="margin:0; overflow:hidden; background:#111;">
+
+<canvas id="c"></canvas>
+
+<script src="cube.js"></script>
+
+<script>
+const cube = new CubeEngine("c");
+
+cube.addCube(0, 0, 10, 2);
+cube.addCube(4, 0, 14, 2);
+cube.addCube(-4, 0, 14, 2);
+
+cube.render();
+</script>
+
+</body>
+</html>
